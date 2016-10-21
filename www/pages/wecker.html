@@ -1,0 +1,35 @@
+<section class="wecker">
+
+
+
+
+    <div ng-controller="weckerCtrl">
+        <h1 style="text-align:center;">  {{title}} </h1> <br/> <br/>
+        <p>
+
+         Ihr Wecker klingelt in: <strong> <timer countdown="0.1" language="de" interval="1000"> {{dayUnit}}</timer> </strong>
+
+        </p>
+
+        <button ng-click="setAlarm()" class="button">Set Alarm</button>
+
+    <br/>
+
+<br><br>
+
+<label class="item item-input">
+          <span class="input-label">Time: </span>
+          <input name="wecker1" type="time" ng-model="time1" ng-model-options="{ getterSetter: true }" formatted-time> {{time1 | date:"HH:mm"}} </input>
+        </label>
+<br/>
+
+<!--
+<span> {{now.format()}} </span> <br/>
+<span> {{tempTime1.format()}} </span> <br>
+<span> {{tempTime2.format()}} </span><br>
+<span> {{ms}} </span><br>
+<span> {{tempTime3}} </span><br>
+-->
+</div>
+
+</section>

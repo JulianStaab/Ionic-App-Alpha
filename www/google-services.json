@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "932102904014",
+    "firebase_url": "https://ionicappalpha.firebaseio.com",
+    "project_id": "ionicappalpha",
+    "storage_bucket": "ionicappalpha.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932102904014:android:ec85c36ac8e94a5c",
+        "android_client_info": {
+          "package_name": "com.ionicframework.ionicappalpha423694"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932102904014-i6fgduc4e9ng6ic195ucd46fkf07os3c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM4_TUaG1Vm_NyXOmDEjYtMnDQYH0t940"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

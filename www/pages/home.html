@@ -1,0 +1,77 @@
+<ion-content [scrollbar-y="false"]  ng-controller="homeCtrl">
+    <br/>
+    <h1 style="text-align:center;">Willkommen zu unserem Projekt!</h1>
+    <br/><br/>
+
+  	<h2>{{title}}</h2> <br/>
+
+<!--
+  	Test-liste: <br/><br>
+  	<ul>
+  		<li ng-repeat="thing in items"> {{thing}} </li>
+  	</ul>
+-->
+    <br/><p>
+    Herzlich Willkommen auf der Startseite unseres Projektes.<br>
+    Das Projekt ist aufgebaut auf Cordova einem mobile application development framework und Ionic, einem weiteren Framework welches auf dem vorherigen basiert.
+    </p>
+
+    <br/><br/>
+    <b> Teilnehmer unseres P-Seminars: </b>
+    <br/><br/>
+    <ul class="list" > <i>
+        <li class="item"> Arbër Rrapaj </li>
+        <li class="item"> Jonas Eichhorn </li>
+        <li class="item"> Alexander Staudinger </li>
+        <li class="item"> Felix Knöpfle </li>
+        <li class="item"> Frederik Richter </li>
+        <li class="item"> Johannes Gorks </li>
+        <li class="item"> Vlad Ruseteanu </li>
+        <li class="item"> Julian Staab </li>
+        <li class="item"> Konstantin Herold </li>
+        <li class="item"> Max Schloter </li>
+        <li class="item"> "Julian Hein" &#9825; </li>
+
+    </i></ul>
+<br/> <br/><br/>
+    <p>
+     <b>Aufgaben:</b>
+    <br/> <br/>
+    <ion-list>
+      <ion-item ng-repeat="task in tasks"
+                class="item-icon-right"
+                ng-class="{complete: task.completed}"
+                ng-click="task.completed = !task.completed">
+          <i class="icon ion-ios-arrow-left"></i>
+          <ion-option-button class="button-calm"
+                      ng-click="edit(task) ">
+                    Bearbeiten
+          </ion-option-button>
+          <ion-option-button class="button-assertive"
+                              ng-click="tasks.splice($index, 1)">
+                    Löschen
+          </ion-option-button>
+          {{task.title}}
+      </ion-item>
+    </ion-list><br/>
+    Empfehlung für Github: <a href="https://www.youtube.com/watch?v=0fKg7e37bQE"> Github Tutorial For Beginners </a>
+  </p> <br/><br/>
+  Inspirierende Bilder, verschiedenster engagierter Männer dürfen an dieser Stelle natürlich auch nicht fehlen:
+  <br/><br/>
+      <img src="img/Stock1.gif" alt="Bild 1" style="margin-right: 20px; margin-left: 20px;">
+      <img src="img/Michael1.gif" alt="Bild 3" style="margin-right: 20px width="299" height="200">
+      <img src="img/Stock2.gif" alt="Bild 2">
+
+  <br/><br/><br/><br/>
+  <p> Wer soweit sein Projekt fertig eingerichtet hat, soll sich in diese Liste einzutragen:
+  <br/><br/>
+  <ion-list>
+    <ion-item ng-repeat="feschueler in feschuelers">
+              {{feschueler.title}}
+    </ion-item>
+  </ion-item>
+</ion-list>
+  </p>
+  <br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>
+  <br/> <br/>
+    </ion-content>
